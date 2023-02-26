@@ -19,7 +19,6 @@ def fib(n):
 def register():
     if request.is_json:
         data = request.get_json()
-        print(data)
         hostname = data.get('hostname')
         ip = data.get('ip')
         as_ip = data.get('as_ip')
